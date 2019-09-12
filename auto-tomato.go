@@ -35,8 +35,7 @@ func round() {
 	if n%2 == 1 {
 		setTimer(&timer, "working", workM)
 	} else {
-		fmt.Println("resting ", restM, "m")
-		timer = time.After(time.Duration(restM) * time.Second)
+		setTimer(&timer, "resting", restM)
 
 	}
 	<-timer
