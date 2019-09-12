@@ -4,7 +4,9 @@ typical
 ```
 go run auto-tomato.go
 ```
-or custom 
+or 
+
+custom 
 ```
 go run tomato.go
 ```
