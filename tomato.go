@@ -30,12 +30,14 @@ func round() {
 	fmt.Scanf("%s %d", &s, &i)
 	
 	switch s {
-	case "w": {
-		fmt.Printf("working %d minutes\n", i)	
-	}
-	case "r": {
-		fmt.Printf("resting %d minutes\n", i)
-	}
+	case "w": 
+		{
+			fmt.Printf("working %d minutes\n", i)	
+	        }
+	case "r": 
+		{
+			fmt.Printf("resting %d minutes\n", i)
+	        }
 	}
 	
 	
