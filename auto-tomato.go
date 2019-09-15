@@ -44,6 +44,6 @@ func round() {
 
 func setTimer(t *<-chan time.Time, description string, minutes int) {
 	fmt.Println(description, minutes, "m")
-	*t = time.After(time.Duration(workM) * time.Minute)
+	*t = time.After(time.Duration(minutes) * time.Minute)
 
 }
