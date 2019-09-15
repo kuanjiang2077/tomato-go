@@ -31,7 +31,7 @@ func beep(times int) {
 func round() {
 	var s string
 	var i int
-	fmt.Scanf("%s %d", &s, %i)
+	fmt.Scanf("%s %d", &s, &i)
 	
 	switch s {
 	case "w": {
