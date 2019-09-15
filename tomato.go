@@ -10,11 +10,7 @@ import (
 	"time"
 )
 
-var workM = 25
 var n = 0
-
-//var rest_m = 5
-//var long_rest_m = 30
 
 func main() {
 	fmt.Println("type in 'w 25' for work for 25m and 'r 5' for rest 5m")
@@ -33,27 +29,21 @@ func beep(times int) {
 }
 
 func round() {
-
-	number := workM
-	scanner := bufio.NewScanner(os.Stdin)
-
-	if scanner.Scan() {
-		text := scanner.Text()
-		arr := strings.Split(text, " ")
-		switch arr[0] {
-		case "w":
-			{
-				fmt.Printf("working ")
-			}
-		case "r":
-			{
-				fmt.Printf("resting ")
-			}
-		}
-		number, _ = strconv.Atoi(arr[1])
-		fmt.Println(number, "minutes")
+	var s string
+	var i int
+	fmt.Scanf("%s %d", &s, %i)
+	
+	switch s {
+	case "w": {
+		fmt.Printf("working %d minutes\n", i)	
 	}
-	timer := time.After(time.Duration(number) * time.Minute)
+	case "r": {
+		fmt.Printf("resting %d minutes\n", i)
+	}
+	}
+	
+	
+	timer := time.After(time.Duration(i) * time.Second)
 	<-timer
 	beep(3)
 	fmt.Println("finish!")
